@@ -1,9 +1,9 @@
 form {
   /* Center the form on the page */
   width: 1600px;
-  /* Form outline */
+    /* Form outline */
   padding: 1em;
-  border: 10px rgb(4, 19, 224);
+  border: 10px salmon;
   border-radius: 5em;
 }
 
@@ -145,6 +145,12 @@ td {
 
 h1 {
   text-align: center;
+  color: salmon;
+  transition: 0.3s font-size linear;
+}
+h1:hover {
+  font-size: 18px;
+  transition: 0.1s font-size linear;
 }
 
 tr td {
@@ -194,3 +200,4 @@ tr td.tdsecond {
 .CellWithComment:hover span.CellComment{
   display:block;
 }
+
