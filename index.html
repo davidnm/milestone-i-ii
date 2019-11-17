@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Capital Markets Commercial tool</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Capital Markets Commercial tool</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Markets showroom change a</a></li>
+          <li><a href="#">Funds showroom</a></li>
+          <li><a href="#">Price Request Form</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        Markets showroom --> TBD
+      </section>
+      <section>
+        Funds showroom --> TBD
+      </section>
+      <section>
+        <form action="" class="myform">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" />
+          </div>
+          <div>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_mail" />
+          </div>
+          <div>
+            <table>
+              <tr>
+                <td class="tdmain" colspan="7">Systems/Infra</td>
+              </tr>
+              <tr>
+                <td>hosting</td>
+                <td>CPD location</td>
+                <td class="CellWithComment">
+                  Environments
+                  <span class="CellComment"
+                    >DEV (Development) and PRO (Production) are mandatory, QA
+                    (Quality Acceptance) and UAT (User Acceptance Test) are
+                    recomended to have a proper End to End Certification. UAT
+                  </span>
+                </td>
+                <td>Connection</td>
+                <td>High Availability</td>
+                <td class="CellWithComment">
+                  Disaster Recovery
+                  <span class="CellComment"
+                    >Back up of the system replicated in a Back up CPD</span
+                  >
+                </td>
+                <td class="CellWithComment">
+                  Communications
+                  <span class="CellComment"
+                    >In case of https, customer needs a Public IP</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <select name="hosting">
+                    <option value="value1" selected>Isolated platform</option>
+                    <option value="value2">Shared platform</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="CPDlocation">
+                    <option value="value1" selected>Madrid</option>
+                    <option value="value2">London</option>
+                    <option value="value3">Paris</option>
+                    <option value="value4">Amsterdam</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="Environments" multiple size="4">
+                    <option value="value1">DEV</option>
+                    <option value="value2">QA</option>
+                    <option value="value3">UAT</option>
+                    <option value="value4">PRO</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="Connections">
+                    <option value="value1" selected>VPN</option>
+                    <option value="value2">Macrolan</option>
+                    <option value="value3"
+                      >Crossed Connect (within the same CPD)</option
+                    >
+                    <option value="value4">P2P (point to point)</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="HA">
+                    <option value="value1" selected>YES</option>
+                    <option value="value2">NO</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="DR">
+                    <option value="value1" selected>YES</option>
+                    <option value="value2">NO</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="Communications">
+                    <option value="value1" selected>Http</option>
+                    <option value="value2">Https</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div>
+              <table>
+                <tr>
+                  <td class="tdmain" colspan="7">Data Providers and Integration</td>
+                </tr>
+                <tr>
+                  <td>Number of Vendors</td>
+                  <td class="CellWithComment">
+                      Is the vendor integrated on our SMF
+                    <span class="CellComment"
+                      >In case the answer is "No" means that the budget will increase the amount, due to the integration tasks on our systems
+                    </span>
+                  </td>
+                  <td class="CellWithComment">
+                      Market data universe
+                  <span class="CellComment"
+                  >How is the data universe made of
+                </span>
+              </td>
+                  <td>Market data prices</td>
+                  <td class="CellWithComment">
+                      Market data quality
+                  <span class="CellComment"
+                  >Different quality of the market data
+                </span>
+              </td>
+                  <td>List of Vendors</td>
+                </tr>
+                <tr>
+                  <td>
+                    <select name="NumberOfVendors">
+                      <option value="value1" selected>1 vendor</option>
+                      <option value="value2">2 vendors (data backup)</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="VendorIntegrated">
+                        <option value="value1" selected>YES</option>
+                        <option value="value2">NO</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="MarketDataUniverse" multiple size="4">
+                      <option value="value1">Client File</option>
+                      <option value="value2">Client WS</option>
+                      <option value="value3">Mix client/complany</option>
+                      <option value="value4">Company</option>
+                    </select>
+                  </td>
+                  <td>
+                      <select name="MarketDataPrices" multiple size="4">
+                        <option value="value1">Markets (US, UK, SPA….)</option>
+                        <option value="value2">Index and its components</option>
+                        <option value="value3">Funds</option>
+                        <option value="value4">Others</option>
+                      </select>
+                    </td>
+                    <td>
+                        <select name="MarketDataQuality" multiple size="4">
+                          <option value="value1">Real Time (Streaming)</option>
+                          <option value="value2">Real Time (NO Streaming)</option>
+                          <option value="value3">Delay Time (Delay: 15m)</option>
+                          <option value="value4">End of Day (EoD)</option>
+                        </select>
+                      </td>
+                      <td>
+                          <select name="DataVendors" multiple size="7">
+                            <option value="value1">SIX</option>
+                            <option value="value2">ICE</option>
+                            <option value="value3">Reuters</option>
+                            <option value="value4">Noesis</option>
+                            <option value="value4">Factset</option>
+                            <option value="value4">Morning</option>
+                            <option value="value4">Funds Library</option>
+                          </select>
+                        </td>
+                </tr>
+              </table>
+            </div>
+
+
+          <div>
+            <table>
+              <tr>
+                <td class="tdmain" colspan="7">Frontend & design</td>
+              </tr>
+              <tr>
+                <td class="CellWithComment">
+                  Front Integration
+                  <span class="CellComment"
+                    >Different ways to integrate the Front-end</span
+                  >
+                </td>
+                <td>Client services integration</td>
+                <td>Compatible Browsers</td>
+                <td>Multilanguage</td>
+                <td>HTML5</td>
+                <td class="CellWithComment">
+                  Own design provided
+                  <span class="CellComment"
+                    >Who is in charge of the design?</span
+                  >
+                </td>
+                <td class="CellWithComment">
+                  branding book provided
+                  <span class="CellComment"
+                    >Much appreciate to have the branding book of the
+                    customer</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <select name="FrontIntegration">
+                    <option value="value1" selected>Iframe</option>
+                    <option value="value2">Totally hosted</option>
+                    <option value="value3"
+                      >Embed in Client website - JsonP</option
+                    >
+                    <option value="value4">Widgets</option>
+                    <option value="value5">Front to Back Services</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="Clientservicesintegration" multiple size="10">
+                    <option value="value1" selected>SSO</option>
+                    <option value="value2">Buy/Sell orders</option>
+                    <option value="value3"
+                      >Portfolio, movements, and rrder list</option
+                    >
+                    <option value="value4">Cancellations</option>
+                    <option value="value5">validation</option>
+                    <option value="value6">documental management</option>
+                    <option value="value7">orders sign off</option>
+                    <option value="value8">pdf generation</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="CompatibleBrowsers" multiple size="7">
+                    <option value="value1" selected>Internet Explorer</option>
+                    <option value="value2">Safari</option>
+                    <option value="value3">Chrome</option>
+                    <option value="value4">Firefox</option>
+                    <option value="value4">IOS webview</option>
+                    <option value="value4">Android webview</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="Multilanguage" multiple size="7">
+                    <option value="value1" selected>English</option>
+                    <option value="value2">Spanish</option>
+                    <option value="value3">French</option>
+                    <option value="value4">German</option>
+                    <option value="value4">Portuguese</option>
+                    <option value="value4">Italian</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="HTML5">
+                    <option value="value1" selected>YES</option>
+                    <option value="value2">NO</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="OWNdesing">
+                    <option value="value1" selected>our company</option>
+                    <option value="value2">client</option>
+                    <option value="value3">mixed</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="branding book">
+                    <option value="value1" selected>YES</option>
+                    <option value="value2">NO</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="tdsecond" colspan="6">Frontend sections</td>
+              </tr>
+              <tr>
+                <td class="tdsecondbis" rowspan="2">markets</td>
+                <td class="tdbis">home</td>
+                <td class="tdbis">index fact sheet</td>
+                <td class="tdbis">Equity fact sheet</td>
+                <td class="tdbis">Other</td>
+                <td class="tdbis">Equity Flows</td>
+              </tr>
+              <tr>
+                <td class="tdbis">
+                  <select name="MarketsHome" multiple size="10">
+                    <option value="value1">index map</option>
+                    <option value="value2">predictived search</option>
+                    <option value="value3">advanced search</option>
+                    <option value="value4">index rankings</option>
+                    <option value="value5">currencies</option>
+                    <option value="value6">Financial News</option>
+                    <option value="value7">Stock Markets News</option>
+                  </select>
+                </td>
+                <td class="tdbis">
+                  <select name="index" multiple size="10">
+                    <option value="value1" selected>market data</option>
+                    <option value="value2">chart</option>
+                    <option value="value3">advanced chart</option>
+                    <option value="value4">List of components</option>
+                    <option value="value5">index rankings</option>
+                  </select>
+                </td>
+                <td class="tdbis">
+                  <select name="Equity" multiple size="10">
+                    <option value="value1" selected>market data</option>
+                    <option value="value2">chart</option>
+                    <option value="value3">advanced chart</option>
+                    <option value="value4">Fundamental analysis</option>
+                    <option value="value4">Technical analysis</option>
+                    <option value="value6">News</option>
+                  </select>
+                </td>
+                <td class="tdbis">
+                  <select name="Others" multiple size="10">
+                    <option value="value1" selected
+                      >Corporate Actions (IPOs, Dividens, Splits, etc)</option
+                    >
+                    <option value="value2">Warrants</option>
+                    <option value="value3">ETF</option>
+                    <option value="value4">Derivatives</option>
+                    <option value="value5">Bond Markets</option>
+                    <option value="value6">Commodity Market</option>
+                    <option value="value7">FX Market</option>
+                    <option value="value8">CFDs</option>
+                  </select>
+                </td>
+                <td class="tdbis">
+                  <select name="EquityFlows" multiple size="10">
+                    <option value="value1" selected>Client portfolio</option>
+                    <option value="value1">Buy/Sell Equity</option>
+                    <option value="value1">Order list</option>
+                    <option value="value1">Cancel</option>
+                    <option value="value4">Corporate Actions flows</option>
+                    <option value="value3">Warrants flow</option>
+                    <option value="value2">ETFs flows</option>
+                    <option value="value4">other flows</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td rowspan="2">Funds</td>
+                <td>home</td>
+                <td>Funds fact sheet</td>
+                <td>Funds flows</td>
+                <td>MIFID flows</td>
+                <td></td>
+              </tr>
+              <td>
+                <select name="FundsHome" multiple size="10">
+                  <option value="value1">Funds search engine</option>
+                  <option value="value2">Funds selected catalog</option>
+                  <option value="value2">Funds completed catalog</option>
+                  <option value="value3">Funds comparation</option>
+                  <option value="value4">Funds fact sheet</option>
+                  <option value="value6">Financial News</option>
+                  <option value="value7">Funds News</option>
+                </select>
+              </td>
+              <td>
+                <select name="Fundsfactsheet" multiple size="10">
+                  <option value="value1" selected>market data</option>
+                  <option value="value2">chart</option>
+                  <option value="value3">advanced chart</option>
+                  <option value="value4">Fundamental analysis</option>
+                  <option value="value4">Technical analysis</option>
+                  <option value="value6">News</option>
+                </select>
+              </td>
+              <td>
+                <select name="Fundsflows" multiple size="10">
+                  <option value="value1" selected>Client portfolio</option>
+                  <option value="value2">Buy/Sell</option>
+                  <option value="value3">Transfers</option>
+                  <option value="value4">Order list</option>
+                  <option value="value5">Cancel</option>
+                  <option value="value6">validation</option>
+                  <option value="value7">pdf contractual documents</option>
+                  <option value="value8">sign off</option>
+                  <option value="value9">pdf summary</option>
+                </select>
+              </td>
+              <td>
+                <select name="MIFIDflows" multiple size="10">
+                  <option value="value1" selected>MIFID test</option>
+                  <option value="value2">Advisory</option>
+                  <option value="value3">Portfolio managed</option>
+                  <option value="value4">PM Admin tool</option>
+                </select>
+              </td>
+              <td></td>
+              <tr>
+                <td class="tdsecondbis" rowspan="2">CMS</td>
+                <td class="tdbis">admin tool</td>
+                <td class="tdbis">sections</td>
+                <td class="tdbis"></td>
+                <td class="tdbis"></td>
+                <td class="tdbis"></td>
+              </tr>
+              <tr>
+                <td class="tdbis">
+                  <select name="admintool" multiple size="10">
+                    <option value="value1">news</option>
+                    <option value="value2">articles</option>
+                    <option value="value3">training</option>
+                    <option value="value4">videos</option>
+                    <option value="value5">documents</option>
+                  </select>
+                </td>
+                <td class="tdbis">
+                  <select name="sections" multiple size="10">
+                    <option value="value1">articles</option>
+                    <option value="value2">analisys</option>
+                    <option value="value5">documents</option>
+                    <option value="value3">education and training</option>
+                    <option value="value4">tools</option>
+                    <option value="value5">courses</option>
+                  </select>
+                </td>
+                <td class="tdbis"></td>
+                <td class="tdbis"></td>
+                <td class="tdbis"></td>
+              </tr>
+            </table>
+          </div>
+          <div>
+            <label for="msg">Additional information:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </div>
+          <div class="button">
+            <button type="submit">Send your message</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
