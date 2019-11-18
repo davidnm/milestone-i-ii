@@ -38,39 +38,15 @@
                 <td class="tdmain" colspan="7">Systems/Infra</td>
               </tr>
               <tr>
-                <td>hosting</td>
-                <td>CPD location</td>
-                <td class="CellWithComment">
-                  Environments
-                  <span class="CellComment"
-                    >DEV (Development) and PRO (Production) are mandatory, QA
-                    (Quality Acceptance) and UAT (User Acceptance Test) are
-                    recomended to have a proper End to End Certification. UAT
-                  </span>
-                </td>
-                <td>Connection</td>
-                <td>High Availability</td>
-                <td class="CellWithComment">
-                  Disaster Recovery
-                  <span class="CellComment"
-                    >Back up of the system replicated in a Back up CPD</span
-                  >
-                </td>
-                <td class="CellWithComment">
-                  Communications
-                  <span class="CellComment"
-                    >In case of https, customer needs a Public IP</span
-                  >
-                </td>
-              </tr>
-              <tr>
                 <td>
+                  <label for="hosting">Hosting:</label>
                   <select name="hosting">
-                    <option value="value1" selected>Isolated platform</option>
+                   <option value="value1" selected>Isolated platform</option>
                     <option value="value2">Shared platform</option>
                   </select>
                 </td>
                 <td>
+                   <label for="CPDlocation">CPD location:</label>
                   <select name="CPDlocation">
                     <option value="value1" selected>Madrid</option>
                     <option value="value2">London</option>
@@ -78,7 +54,13 @@
                     <option value="value4">Amsterdam</option>
                   </select>
                 </td>
-                <td>
+                    <td class="CellWithComment">
+                        <label for="Environments">Environments:</label>
+                        <span class="CellComment"
+                          >DEV (Development) and PRO (Production) are mandatory, QA
+                          (Quality Acceptance) and UAT (User Acceptance Test) are
+                          recomended to have a proper End to End Certification. UAT
+                        </span>
                   <select name="Environments" multiple size="4">
                     <option value="value1">DEV</option>
                     <option value="value2">QA</option>
@@ -87,6 +69,7 @@
                   </select>
                 </td>
                 <td>
+                    <label for="Connections">Connections:</label>
                   <select name="Connections">
                     <option value="value1" selected>VPN</option>
                     <option value="value2">Macrolan</option>
@@ -97,18 +80,27 @@
                   </select>
                 </td>
                 <td>
+                    <label for="HA">High Availability:</label>
                   <select name="HA">
                     <option value="value1" selected>YES</option>
                     <option value="value2">NO</option>
                   </select>
                 </td>
-                <td>
+                    <td class="CellWithComment">
+                        <label for="DR">Disaster Recovery:</label>
+                        <span class="CellComment"
+                          >Back up of the system replicated in a Back up CPD</span
+                        >
                   <select name="DR">
                     <option value="value1" selected>YES</option>
                     <option value="value2">NO</option>
                   </select>
                 </td>
-                <td>
+                <td class="CellWithComment">
+                    <label for="Communications">Communications:</label>
+                    <span class="CellComment"
+                          >In case of https, customer needs a Public IP</span
+                        >
                   <select name="Communications">
                     <option value="value1" selected>Http</option>
                     <option value="value2">Https</option>
