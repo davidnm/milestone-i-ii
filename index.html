@@ -116,42 +116,28 @@
                   <td class="tdmain" colspan="7">Data Providers and Integration</td>
                 </tr>
                 <tr>
-                  <td>Number of Vendors</td>
-                  <td class="CellWithComment">
-                      Is the vendor integrated on our SMF
-                    <span class="CellComment"
-                      >In case the answer is "No" means that the budget will increase the amount, due to the integration tasks on our systems
-                    </span>
-                  </td>
-                  <td class="CellWithComment">
-                      Market data universe
-                  <span class="CellComment"
-                  >How is the data universe made of
-                </span>
-              </td>
-                  <td>Market data prices</td>
-                  <td class="CellWithComment">
-                      Market data quality
-                  <span class="CellComment"
-                  >Different quality of the market data
-                </span>
-              </td>
-                  <td>List of Vendors</td>
-                </tr>
-                <tr>
                   <td>
+                <label for="NumberOfVendors">Number of Vendors:</label>
                     <select name="NumberOfVendors">
                       <option value="value1" selected>1 vendor</option>
                       <option value="value2">2 vendors (data backup)</option>
                     </select>
                   </td>
-                  <td>
-                    <select name="VendorIntegrated">
+                      <td class="CellWithComment">
+                          <label for="VendorIntegrated">Is the vendor integrated on our SMF:</label>
+                          <span class="CellComment"
+                          >In case the answer is "No" means that the budget will increase the amount, due to the integration tasks on our systems
+                        </span>
+                        <select name="VendorIntegrated">
                         <option value="value1" selected>YES</option>
                         <option value="value2">NO</option>
                     </select>
                   </td>
-                  <td>
+                      <td class="CellWithComment">
+                          <label for="MarketDataUniverse">Market data universe:</label>                        
+                      <span class="CellComment"
+                      >How is the data universe made of
+                    </span>
                     <select name="MarketDataUniverse" multiple size="4">
                       <option value="value1">Client File</option>
                       <option value="value2">Client WS</option>
@@ -160,6 +146,7 @@
                     </select>
                   </td>
                   <td>
+                      <label for="MarketDataPrices">Market data prices:</label>                        
                       <select name="MarketDataPrices" multiple size="4">
                         <option value="value1">Markets (US, UK, SPA….)</option>
                         <option value="value2">Index and its components</option>
@@ -167,7 +154,11 @@
                         <option value="value4">Others</option>
                       </select>
                     </td>
-                    <td>
+                        <td class="CellWithComment">
+                        <label for="MarketDataQuality">Market data quality:</label>                                                
+                        <span class="CellComment"
+                        >Different quality of the market data
+                      </span>
                         <select name="MarketDataQuality" multiple size="4">
                           <option value="value1">Real Time (Streaming)</option>
                           <option value="value2">Real Time (NO Streaming)</option>
@@ -176,6 +167,7 @@
                         </select>
                       </td>
                       <td>
+                          <label for="DataVendors">List of Vendors:</label>                                                
                           <select name="DataVendors" multiple size="7">
                             <option value="value1">SIX</option>
                             <option value="value2">ICE</option>
@@ -197,32 +189,11 @@
                 <td class="tdmain" colspan="7">Frontend & design</td>
               </tr>
               <tr>
-                <td class="CellWithComment">
-                  Front Integration
-                  <span class="CellComment"
-                    >Different ways to integrate the Front-end</span
-                  >
-                </td>
-                <td>Client services integration</td>
-                <td>Compatible Browsers</td>
-                <td>Multilanguage</td>
-                <td>HTML5</td>
-                <td class="CellWithComment">
-                  Own design provided
-                  <span class="CellComment"
-                    >Who is in charge of the design?</span
-                  >
-                </td>
-                <td class="CellWithComment">
-                  branding book provided
-                  <span class="CellComment"
-                    >Much appreciate to have the branding book of the
-                    customer</span
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>
+                    <td class="CellWithComment">
+                        <label for="FrontIntegration">Front Integration:</label>                        
+                        <span class="CellComment"
+                          >Different ways to integrate the Front-end</span
+                        >
                   <select name="FrontIntegration">
                     <option value="value1" selected>Iframe</option>
                     <option value="value2">Totally hosted</option>
@@ -234,6 +205,7 @@
                   </select>
                 </td>
                 <td>
+                    <label for="Clientservicesintegration">Client services integration:</label>                        
                   <select name="Clientservicesintegration" multiple size="10">
                     <option value="value1" selected>SSO</option>
                     <option value="value2">Buy/Sell orders</option>
@@ -248,6 +220,7 @@
                   </select>
                 </td>
                 <td>
+                    <label for="CompatibleBrowsers">Compatible Browsers:</label>                        
                   <select name="CompatibleBrowsers" multiple size="7">
                     <option value="value1" selected>Internet Explorer</option>
                     <option value="value2">Safari</option>
@@ -258,7 +231,8 @@
                   </select>
                 </td>
                 <td>
-                  <select name="Multilanguage" multiple size="7">
+                    <label for="Multilanguage">Multilanguage:</label>                        
+                   <select name="Multilanguage" multiple size="7">
                     <option value="value1" selected>English</option>
                     <option value="value2">Spanish</option>
                     <option value="value3">French</option>
@@ -268,22 +242,22 @@
                   </select>
                 </td>
                 <td>
+                    <label for="HTML5">HTML5:</label>                        
                   <select name="HTML5">
                     <option value="value1" selected>YES</option>
                     <option value="value2">NO</option>
                   </select>
                 </td>
-                <td>
+                    <td class="CellWithComment">
+                        <label for="OWNdesing">Own design provided:</label>                        
+                        <span class="CellComment"
+                          >Who is in charge of the design?</span
+                        >
                   <select name="OWNdesing">
                     <option value="value1" selected>our company</option>
-                    <option value="value2">client</option>
+                    <option value="value2">client branding provided</option>
+                    <option value="value2">client branding NO provided</option>
                     <option value="value3">mixed</option>
-                  </select>
-                </td>
-                <td>
-                  <select name="branding book">
-                    <option value="value1" selected>YES</option>
-                    <option value="value2">NO</option>
                   </select>
                 </td>
               </tr>

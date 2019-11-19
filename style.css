@@ -1,5 +1,8 @@
+
 section{
   margin-left: 10vw;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
 form {
@@ -30,6 +33,7 @@ textarea {
        By default, textareas have a monospace font */
   font: 1em;
   font-family: Arial, Helvetica, sans-serif;
+  
 
   /* Uniform text field size */
   width: 300px;
@@ -117,13 +121,12 @@ table {
   border: 2px solid rgb(200,200,200);
   letter-spacing: 1px;
   font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;;
-  white-space: pre-wrap;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 td, th {
   border: 1px solid rgb(190,190,190);
-  padding: 10px 20px;
+  padding: 2px 2px;
 }
 
 th {
@@ -132,6 +135,7 @@ th {
 
 
 td {
+vertical-align: 0px;
   text-align: center;
   white-space: nowrap;
 
@@ -168,6 +172,8 @@ tr td.tdmain {
   background-color: rgb(107, 98, 240);
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 20px;
+
 }
 
 tr td.tdsecond {
@@ -234,14 +240,14 @@ tr td.tdsecond {
 }
 
 @media screen and (max-width: 600px){
+
   section{
     margin-left: 2vw;
+    margin-right: 2vw;
   }
   label {
     /* Uniform size & alignment */
-    padding: 1em;
     display: block;
-    width: 40px;
     margin-right: 3px;
   }
 nav ul{
@@ -249,8 +255,60 @@ flex-direction: column;
 }
 table, thead, tbody, th, td, tr {
   display: block;
+  width: auto;
+  }
+  td:hover {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.1s   border 0.5px ;
+  }
+  
+
+table {
+  border-radius: 8px;
+  align-self: center;
+  border-collapse: collapse;
+  border: 1px solid rgb(107, 98, 240);
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
+input,
+select {
+  border-radius: 10px;
+
+  /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+  background-color: rgb(255, 139, 30);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+
+
+  /* Uniform text field size */
+  max-width: 80vw;
+  width: 80vw;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+  font: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* Uniform text field size */
+  max-width: 80vw;
+  width: 80vw;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
 
 }
