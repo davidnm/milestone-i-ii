@@ -229,7 +229,7 @@ tr td.tdsecond {
 									   color-stop(0.86, rgb(28,58,148)));
 }
 
-@media screen and (max-width: 1100px) and (min-width: 601px) {
+@media screen and (max-width: 1200px) and (min-width: 801px) {
   table{
     width: 1000px;
     display: block;
@@ -239,7 +239,7 @@ tr td.tdsecond {
 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
 
   section{
     margin-left: 2vw;
