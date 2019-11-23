@@ -17,22 +17,16 @@
       </nav>
     </header>
     <main>
+<!--
       <section>
-        Markets showroom --> TBD
+        Markets showroom -> TBD
       </section>
       <section>
-        Funds showroom --> TBD
+        Funds showroom -> TBD
       </section>
+    -->
       <section>
         <form action="" class="myform">
-          <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="user_name" />
-          </div>
-          <div>
-            <label for="mail">E-mail:</label>
-            <input type="email" id="mail" name="user_mail" />
-          </div>
           <div>
             <table>
               <tr>
@@ -125,7 +119,7 @@
                     </select>
                   </td>
                       <td class="CellWithComment">
-                          <label for="VendorIntegrated">Is the vendor integrated on our SMF:</label>
+                          <label for="VendorIntegrated">vendor integrated:</label>
                           <span class="CellComment"
                           >In case the answer is "No" means that the budget will increase the amount, due to the integration tasks on our systems
                         </span>
@@ -207,7 +201,7 @@
                 </td>
                 <td>
                     <label for="Clientservicesintegration">Client services integration:</label>                        
-                  <select name="Clientservicesintegration" multiple size="10">
+                  <select name="Clientservicesintegration" multiple size="8">
                     <option value="value1" selected>SSO</option>
                     <option value="value2">Buy/Sell orders</option>
                     <option value="value3"
@@ -222,7 +216,7 @@
                 </td>
                 <td>
                     <label for="CompatibleBrowsers">Compatible Browsers:</label>                        
-                  <select name="CompatibleBrowsers" multiple size="7">
+                  <select name="CompatibleBrowsers" multiple size="6">
                     <option value="value1" selected>Internet Explorer</option>
                     <option value="value2">Safari</option>
                     <option value="value3">Chrome</option>
@@ -233,7 +227,7 @@
                 </td>
                 <td>
                     <label for="Multilanguage">Multilanguage:</label>                        
-                   <select name="Multilanguage" multiple size="7">
+                   <select name="Multilanguage" multiple size="6">
                     <option value="value1" selected>English</option>
                     <option value="value2">Spanish</option>
                     <option value="value3">French</option>
@@ -266,16 +260,10 @@
                 <td class="tdsecond" colspan="6">Frontend sections</td>
               </tr>
               <tr>
-                <td class="tdsecondbis" rowspan="2">markets</td>
-                <td class="tdbis">home</td>
-                <td class="tdbis">index fact sheet</td>
-                <td class="tdbis">Equity fact sheet</td>
-                <td class="tdbis">Other</td>
-                <td class="tdbis">Equity Flows</td>
-              </tr>
-              <tr>
+                <td class="tdsecondbis">markets</td>
                 <td class="tdbis">
-                  <select name="MarketsHome" multiple size="10">
+                    <label for="MarketsHome">home:</label>                        
+                  <select name="MarketsHome" multiple size="7">
                     <option value="value1">index map</option>
                     <option value="value2">predictived search</option>
                     <option value="value3">advanced search</option>
@@ -286,7 +274,8 @@
                   </select>
                 </td>
                 <td class="tdbis">
-                  <select name="index" multiple size="10">
+                    <label for="index">index fact sheet:</label>                        
+                  <select name="index" multiple size="5">
                     <option value="value1" selected>market data</option>
                     <option value="value2">chart</option>
                     <option value="value3">advanced chart</option>
@@ -295,7 +284,8 @@
                   </select>
                 </td>
                 <td class="tdbis">
-                  <select name="Equity" multiple size="10">
+                    <label for="Equity">Equity fact sheet:</label>                        
+                  <select name="Equity" multiple size="6">
                     <option value="value1" selected>market data</option>
                     <option value="value2">chart</option>
                     <option value="value3">advanced chart</option>
@@ -305,7 +295,8 @@
                   </select>
                 </td>
                 <td class="tdbis">
-                  <select name="Others" multiple size="10">
+                    <label for="Others">Other:</label>                        
+                  <select name="Others" multiple size="8">
                     <option value="value1" selected
                       >Corporate Actions (IPOs, Dividens, Splits, etc)</option
                     >
@@ -319,7 +310,8 @@
                   </select>
                 </td>
                 <td class="tdbis">
-                  <select name="EquityFlows" multiple size="10">
+                    <label for="EquityFlows">Equity flows:</label>                        
+                  <select name="EquityFlows" multiple size="8">
                     <option value="value1" selected>Client portfolio</option>
                     <option value="value1">Buy/Sell Equity</option>
                     <option value="value1">Order list</option>
@@ -332,15 +324,10 @@
                 </td>
               </tr>
               <tr>
-                <td rowspan="2">Funds</td>
-                <td>home</td>
-                <td>Funds fact sheet</td>
-                <td>Funds flows</td>
-                <td>MIFID flows</td>
-                <td></td>
-              </tr>
+                  <td class="tdsecondbis">Funds</td>
               <td>
-                <select name="FundsHome" multiple size="10">
+                  <label for="FundsHome">home:</label>                        
+                <select name="FundsHome" multiple size="7">
                   <option value="value1">Funds search engine</option>
                   <option value="value2">Funds selected catalog</option>
                   <option value="value2">Funds completed catalog</option>
@@ -351,7 +338,8 @@
                 </select>
               </td>
               <td>
-                <select name="Fundsfactsheet" multiple size="10">
+                  <label for="Fundsfactsheet">Funds fact sheet:</label>                        
+                <select name="Fundsfactsheet" multiple size="6">
                   <option value="value1" selected>market data</option>
                   <option value="value2">chart</option>
                   <option value="value3">advanced chart</option>
@@ -361,7 +349,8 @@
                 </select>
               </td>
               <td>
-                <select name="Fundsflows" multiple size="10">
+                  <label for="Fundsflows">Funds flows:</label>                        
+                <select name="Fundsflows" multiple size="9">
                   <option value="value1" selected>Client portfolio</option>
                   <option value="value2">Buy/Sell</option>
                   <option value="value3">Transfers</option>
@@ -374,7 +363,8 @@
                 </select>
               </td>
               <td>
-                <select name="MIFIDflows" multiple size="10">
+                  <label for="MIFIDflows">MIFID flows:</label>                        
+                <select name="MIFIDflows" multiple size="4">
                   <option value="value1" selected>MIFID test</option>
                   <option value="value2">Advisory</option>
                   <option value="value3">Portfolio managed</option>
@@ -383,16 +373,10 @@
               </td>
               <td></td>
               <tr>
-                <td class="tdsecondbis" rowspan="2">CMS</td>
-                <td class="tdbis">admin tool</td>
-                <td class="tdbis">sections</td>
-                <td class="tdbis"></td>
-                <td class="tdbis"></td>
-                <td class="tdbis"></td>
-              </tr>
-              <tr>
+                <td class="tdsecondbis">CMS</td>
                 <td class="tdbis">
-                  <select name="admintool" multiple size="10">
+                    <label for="admintool">admin tool:</label>                        
+                  <select name="admintool" multiple size="5">
                     <option value="value1">news</option>
                     <option value="value2">articles</option>
                     <option value="value3">training</option>
@@ -401,7 +385,8 @@
                   </select>
                 </td>
                 <td class="tdbis">
-                  <select name="sections" multiple size="10">
+                    <label for="sections">sections:</label>                        
+                  <select name="sections" multiple size="6">
                     <option value="value1">articles</option>
                     <option value="value2">analisys</option>
                     <option value="value5">documents</option>
@@ -416,6 +401,14 @@
               </tr>
             </table>
           </div>
+          <div>
+              <label for="name">Name:</label>
+              <input class="fondoblanco" type="text" id="name" name="user_name" />
+            </div>
+            <div>
+              <label for="mail">E-mail:</label>
+              <input class="fondoblanco" type="email" id="mail" name="user_mail" />
+            </div>
           <div>
             <label for="msg">Additional information:</label>
             <textarea id="msg" name="user_message"></textarea>
