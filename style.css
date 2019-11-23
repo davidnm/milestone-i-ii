@@ -138,6 +138,8 @@ header{
 h1 {
   margin: 0;
   padding: 0;
+  padding-top: 30px;
+  margin-left: -10vw;
   text-align: center;
   color: whitesmoke;
   font-size: 30px;
@@ -351,7 +353,8 @@ textarea {
 }
 h1{
     display: none !important;
-   }
+
+  }
 }
 .CellComment{
   display:none;
